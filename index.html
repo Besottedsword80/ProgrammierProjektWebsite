@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RingTheBell – Offizielle Website</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(180deg, #081120, #10233f, #18345a);
+    min-height: 100vh;
+}
+
+/* ZENTRIERTER CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 40px;
+    text-align: center; /* Standard: alles mittig */
+}
+
+/* TITEL */
+h1 {
+    font-size: 70px;
+    color: #ffd54f;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 213, 79, 0.5);
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #d0d0d0;
+}
+
+/* BUTTON */
+.download-btn, .btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    background: #ffd54f;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.download-btn:hover, .btn:hover {
+    background: #ffca28;
+    transform: scale(1.05);
+}
+
+/* HEADLINES */
+h2 {
+    color: #ffd54f;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* STANDARD TEXT (zentriert) */
+p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ===== SPIELREGELN LINKS AUSRICHTEN ===== */
+.rules {
+    text-align: left;   /* <- wichtig */
+    max-width: 800px;
+    margin: 0 auto;     /* bleibt trotzdem mittig im Layout */
+}
+
+.rules h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.rules p {
+    text-align: left;   /* override vom globalen p */
+    margin-bottom: 10px;
+}
+
+.rules ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.rules li {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 80px;
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>RingTheBell</h1>
+
+    <div class="subtitle">
+        Offizielle Website – Regeln, Tutorial und Infos
+    </div>
+
+    <a class="btn" href="#rules">Regeln ansehen</a>
+
+    <h2>Spielregeln</h2>
+
+    <div class="rules">
+
+        <h3>1. Ziel des Spiels</h3>
+        <p>
+            Ziel ist es, mit 4 Karten möglichst wenige Punkte zu haben.
+            Bei 5 oder weniger Punkten darf ein Spieler „Ring the Bell“ sagen.
+            Danach wird die Runde beendet und gewertet.
+        </p>
+
+        <h3>2. Aufbau</h3>
+        <p>
+            Die Karten werden gemischt und jeder Spieler erhält 4 Karten.
+            Der Rest bildet den Nachziehstapel.
+            Zwei Karten dürfen angeschaut werden.
+        </p>
+
+        <h3>3. Ablauf</h3>
+        <p>
+            Spieler ziehen Karten, tauschen oder legen sie ab.
+            Ziel ist es, die Punktzahl zu reduzieren.
+        </p>
+
+        <h3>4. Strafen</h3>
+        <ul>
+            <li>+ Karte bei Regelverstoß</li>
+            <li>+15 Punkte wenn falsch „Ring the Bell“ gesagt wird</li>
+            <li>+5 Punkte wenn trotzdem jemand weniger Punkte hat</li>
+        </ul>
+
+        <h3>5. Karten</h3>
+        <p>
+            Werte von 1–12 mit Themen wie CPU, GPU, Monitor usw.
+        </p>
+
+        <h3>6. Spezialkarten</h3>
+        <p>
+            RAM, Floppy Disk, Comic Sans und Drucker mit speziellen Effekten.
+        </p>
+
+    </div>
+
+    <h2>Tutorial Video</h2>
+
+    <video controls>
+        <source src="tutorial.mp4" type="video/mp4">
+        Dein Browser unterstützt dieses Video nicht.
+    </video>
+
+    <h2>Download</h2>
+
+    <p>Hier kannst du das Spiel herunterladen:</p>
+
+    <a class="download-btn"
+   href="https://drive.google.com/file/d/1_P-vnOttsY6uX9AAvfrLecDyMryW4A-r/view?usp=share_link"
+   target="_blank">
+    Spiel herunterladen (.jar)
+</a>
+
+    <div class="footer">
+        <p>
+            RingTheBell wurde im Rahmen der Vorlesung „ProgrammierProjekt“ erstellt von
+            Georg Rieger, Aaron Ziltener, Nicolas Sivasakthivel und Nikolas Walker.
+        </p>
+        <p>© 2026 RingTheBell</p>
+    </div>
+
+</div>
+
+</body>
+</html>
